@@ -229,8 +229,8 @@ def download():
             lat_min = float(Latmin)
             lat_max = float(Latmax)
             
-            t1 = sd[1:10]
-            t2 = ed[1:10]
+            t1 = sd[1:11]
+            t2 = ed[1:11]
             
             date_min = t1 +" 12:00:00"
             date_max = t2+" 12:00:00"
@@ -415,8 +415,8 @@ def download():
             lat_min = float(Latmin)
             lat_max = float(Latmax)
             
-            t1 = sd[1:10]
-            t2 = ed[1:10]
+            t1 = sd[1:11]
+            t2 = ed[1:11]
             
             date_min = t1 +" 12:00:00"
             date_max = t2+" 12:00:00"
@@ -600,8 +600,8 @@ def download():
             lat_min = float(Latmin)
             lat_max = float(Latmax)
             
-            t1 = sd[1:10]
-            t2 = ed[1:10]
+            t1 = sd[1:11]
+            t2 = ed[1:11]
             
             date_min = t1 +" 12:00:00"
             date_max = t2+" 12:00:00"
