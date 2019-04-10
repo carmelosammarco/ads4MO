@@ -65,9 +65,9 @@ def download():
     
 
     # MONTH, DEPTH, DAY
-    typology = input("Please enter the download type. You can decide to download by [MONTH], [DEPTH] or [DAY]: ")
+    typology = input("Please enter which type of download |MONTH|DEPTH|DAY|: ")
 
-    string = input("Please enter the motuclient script: ")
+    string = input("Based on the selection criteria (showed in the documentation), please input the motuclient script: ")
     
     Out = str(os.getcwd())
 
@@ -91,7 +91,7 @@ def download():
     dV = countX(a, z)
 
     text1 = "The number of variables are = " + str(nV)      
-    text2 = "Your request include depths(1)/no-depth(0) dimension = " + str(dV)
+    text2 = "Your request includes depths(=1)|NO-depth(=0) dimension = " + str(dV)
     text3 = "Please wait... Download in progress using a loop by " + typology 
     
     print ("#####")
@@ -659,7 +659,7 @@ def download():
                     date_start = date_end_cmd + dt.timedelta(days=1)
 
         else:
-            print("ERROR: Number of variables not supported. You can find how to modify the maximum number of variables in the project documentation")   
+            print("ERROR: Number of variables not supported. If you need more variables please to contact the author of this script")   
 
 
 
@@ -861,7 +861,7 @@ def download():
                     mt.motu_api.execute_request(_opts)
 
         else:
-            print("ERROR: Number of variables not supported. You can find how to modify the maximum number of variables in the project documentation") 
+            print("ERROR: Number of variables not supported. If you need more variables please to contact the author of this script") 
 
             
 
@@ -1479,7 +1479,7 @@ def download():
                             break 
 
         else:
-            print("ERROR: Number of variables not supported. You can find how to modify the maximum number of variables in the project documentation")
+            print("ERROR: Number of variables not supported. If you need more variables please to contact the author of this script")
 
 
 
