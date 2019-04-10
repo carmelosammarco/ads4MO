@@ -1,8 +1,9 @@
 ![Imgur](https://i.imgur.com/iEWAtkS.gif?1)
 
+# ads4mo - Added Download Services for Mercator-Ocean
+
 [![Build Status](https://travis-ci.com/carmelosammarco/ads4mo.png)](https://travis-ci.com/carmelosammarco/ads4mo)
 
-# ads4mo - Added Download Services for Mercator-Ocean
 
 Python module containing added downloads services for download the netCDF files from the CMEMS's catalogue and especially usefull for big data requests. It is possible download data by MONTH, DEPTH or DAY until a maximum of three selected variables(Planning to increase this number thought).
 It brings in a very intuitive scripting way what was already proposed with [MerOC](https://github.com/carmelosammarco/MerOC).
