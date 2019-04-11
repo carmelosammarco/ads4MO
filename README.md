@@ -63,7 +63,7 @@ What you need to use as module's input:
 --date-min "2019-04-19 12:00:00" --date-max "2019-04-19 12:00:00" --depth-min 0.493 --depth-max 0.4942 --variable thetao --variable bottomT
 ```
 
-
+![Imgur](https://i.imgur.com/VWkZpqm.gifv)
 
 
 
