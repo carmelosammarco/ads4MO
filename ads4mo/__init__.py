@@ -59,8 +59,8 @@ def download():
 
    
     #Line of code from which I extract the information(examples)
-    #string = "--user csammarco --pwd MOCs-2018# --motu http://my.cmems-du.eu/motu-web/Motu --service-id NORTHWESTSHELF_REANALYSIS_PHY_004_009-TDS --product-id MetO-NWS-PHY-mm-CUR --longitude-min -19.888885498046875 --longitude-max 12.999671936035156 --latitude-min 40.06666564941406 --latitude-max 65.0001220703125 --date-min "2016-08-16 12:00:00" --date-max "2016-12-16 12:00:00" --depth-min -1 --depth-max 1  --variable vo --variable uo --out-dir /home/parallels/Desktop --out-name file.nc"
-    #string = "--user csammarco --pwd MOCs-2018# --motu http://nrt.cmems-du.eu/motu-web/Motu --service-id BALTICSEA_ANALYSIS_FORECAST_WAV_003_010-TDS --product-id dataset-bal-analysis-forecast-wav-hourly --longitude-min 15 --longitude-max 30.207738876342773 --latitude-min 60 --latitude-max 70 --date-min "2017-08-07 03:00:00" --date-max "2017-11-04 12:00:00" --variable VTPK --out-dir /home/parallels/Desktop/xml --out-name file.nc
+    #string = "--user ##### --pwd ###### --motu http://my.cmems-du.eu/motu-web/Motu --service-id NORTHWESTSHELF_REANALYSIS_PHY_004_009-TDS --product-id MetO-NWS-PHY-mm-CUR --longitude-min -19.888885498046875 --longitude-max 12.999671936035156 --latitude-min 40.06666564941406 --latitude-max 65.0001220703125 --date-min "2016-08-16 12:00:00" --date-max "2016-12-16 12:00:00" --depth-min -1 --depth-max 1  --variable vo --variable uo --out-dir /home/parallels/Desktop --out-name file.nc"
+    #string = "--user #### --pwd ##### --motu http://nrt.cmems-du.eu/motu-web/Motu --service-id BALTICSEA_ANALYSIS_FORECAST_WAV_003_010-TDS --product-id dataset-bal-analysis-forecast-wav-hourly --longitude-min 15 --longitude-max 30.207738876342773 --latitude-min 60 --latitude-max 70 --date-min "2017-08-07 03:00:00" --date-max "2017-11-04 12:00:00" --variable VTPK --out-dir /home/parallels/Desktop/xml --out-name file.nc
     
     
 
