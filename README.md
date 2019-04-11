@@ -8,7 +8,9 @@
 Python module containing added downloads services for download the netCDF files from the CMEMS's catalogue and especially usefull for big data requests. It is possible download data by MONTH, DEPTH or DAY until a maximum of three selected variables(Planning to increase this number thought).
 It brings in a very intuitive scripting way what was already proposed with [MerOC](https://github.com/carmelosammarco/MerOC).
 
-![GIF](DATA/GIF.gif)
+<p align="center">
+  <img width="600" height="380" src="DATA/GIF.gif">
+</p>
 
 ## Be aware that:
 
