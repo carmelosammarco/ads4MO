@@ -8,6 +8,8 @@
 Python module containing added downloads services for download the netCDF files from the CMEMS's catalogue and especially usefull for big data requests. It is possible download data by MONTH, DEPTH or DAY until a maximum of three selected variables(Planning to increase this number thought).
 It brings in a very intuitive scripting way what was already proposed with [MerOC](https://github.com/carmelosammarco/MerOC).
 
+![GIF](DATA/GIF.gif)
+
 ## Be aware that:
 
 The tool is in development so it can be possible find bugs, errors and imprecisions. Please to report them if you find one.
@@ -62,9 +64,6 @@ What you need to use as module's input:
 --product-id global-analysis-forecast-phy-001-024 --longitude-min -180 --longitude-max 179.9166717529297 --latitude-min -80 --latitude-max 90 
 --date-min "2019-04-19 12:00:00" --date-max "2019-04-19 12:00:00" --depth-min 0.493 --depth-max 0.4942 --variable thetao --variable bottomT
 ```
-
-
-![Imgur](https://i.imgur.com/VWkZpqm.gifv)
 
 
 
