@@ -659,7 +659,7 @@ def download():
                     date_start = date_end_cmd + dt.timedelta(days=1)
 
         else:
-            print("ERROR: Number of variables not supported. If you need more variables please to contact the author of this script")   
+            print("ERROR: Number of variables not supported. If you need more variables please to contact Carmelo Sammarco")   
 
 
 
@@ -731,12 +731,20 @@ def download():
                     _opts = load_options(default_values)
                     mt.motu_api.execute_request(_opts)
 
+                    exsist = os.path.isfile(Out + "/" + outputname1 )
 
-                    outputname2 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
-                    default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z1), 'depth_max': str(z2),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname2, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
-                    print(outputname2)
-                    _opts = load_options(default_values)
-                    mt.motu_api.execute_request(_opts)
+                    if exsist:
+                        print("---The depth correction is not required---")
+                        print ("####################")
+                    
+                    else:
+                        outputname2 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
+                        default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z1), 'depth_max': str(z2),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname2, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
+                        print(outputname2)
+                        _opts = load_options(default_values)
+                        mt.motu_api.execute_request(_opts)
+                        print ("---The min/max depth value is corrected---")
+                        print ("####################")
 
         elif nV == 2:
 
@@ -792,12 +800,20 @@ def download():
                     _opts = load_options(default_values)
                     mt.motu_api.execute_request(_opts)
 
+                    exsist = os.path.isfile(Out + "/" + outputname1 )
+
+                    if exsist:
+                        print("---The depth correction is not required---")
+                        print ("####################")
+
 
                     outputname2 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
                     default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z1), 'depth_max': str(z2),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname2, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                     print(outputname2)
                     _opts = load_options(default_values)
                     mt.motu_api.execute_request(_opts)
+                    print ("---The min/max depth value is corrected---")
+                    print ("####################")
 
         elif nV == 3:
 
@@ -853,15 +869,23 @@ def download():
                     _opts = load_options(default_values)
                     mt.motu_api.execute_request(_opts)
 
+                    exsist = os.path.isfile(Out + "/" + outputname1 )
+
+                    if exsist:
+                        print("---The depth correction is not required---")
+                        print ("####################")
+
 
                     outputname2 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
                     default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z1), 'depth_max': str(z2),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname2, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                     print(outputname2)
                     _opts = load_options(default_values)
                     mt.motu_api.execute_request(_opts)
+                    print ("---The min/max depth value is corrected---")
+                    print ("####################")
 
         else:
-            print("ERROR: Number of variables not supported. If you need more variables please to contact the author of this script") 
+            print("ERROR: Number of variables not supported. If you need more variables please to contact Carmelo Sammarco") 
 
             
 
@@ -1479,7 +1503,7 @@ def download():
                             break 
 
         else:
-            print("ERROR: Number of variables not supported. If you need more variables please to contact the author of this script")
+            print("ERROR: Number of variables not supported. If you need more variables please to contact Carmelo Sammarco")
 
 
 
