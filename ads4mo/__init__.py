@@ -71,7 +71,7 @@ def download():
     
     Out = str(os.getcwd())
 
-    fname = "none.nc"
+    fname = "data.nc"
     
 
     
@@ -668,10 +668,10 @@ def download():
 
     if typology == "DEPTH":
 
-        stringxml = "python -m motuclient " + string + "--out-name none.nc " + "--describe-product"
+        stringxml = "python -m motuclient " + string + "--out-name " + name + ".nc"  + " --describe-product"
         print (stringxml)
         os.system(stringxml)
-        tree = ET.parse( name + ".xml")
+        tree = ET.parse( Out + "/" + name + ".xml")
         root = tree.getroot()
         depth = root[2].text
         listadepth = depth.split(';')
