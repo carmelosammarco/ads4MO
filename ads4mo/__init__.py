@@ -671,7 +671,7 @@ def download():
         stringxml = "python -m motuclient " + string + " --describe-product"
         print (stringxml)
         os.system(stringxml)
-        tree = ET.parse( name+".xml")
+        tree = ET.parse( fname+".xml")
         root = tree.getroot()
         depth = root[2].text
         listadepth = depth.split(';')
