@@ -697,7 +697,7 @@ def download():
             proxy_server = None
 
             #outputdir = str(Outdir)
-            outputname = str(fname)
+            #outputname = str(fname)
             motu_server = str(Mot)
             product_id = str(Pr)
             dataset_id = str(Ds)
@@ -725,7 +725,7 @@ def download():
                     z1 = zformat
                     z2 = float(zformat) + 0.01
 
-                    outputname1 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
+                    outputname1 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                     default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z), 'depth_max': str(z),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname1, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                     print(outputname1)
                     _opts = load_options(default_values)
@@ -738,7 +738,7 @@ def download():
                         print ("####################")
                     
                     else:
-                        outputname2 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
+                        outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                         default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z1), 'depth_max': str(z2),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname2, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                         print(outputname2)
                         _opts = load_options(default_values)
@@ -766,7 +766,7 @@ def download():
             proxy_server = None
 
             #outputdir = str(Outdir)
-            outputname = str(fname)
+            #outputname = str(fname)
             motu_server = str(Mot)
             product_id = str(Pr)
             dataset_id = str(Ds)
@@ -794,7 +794,7 @@ def download():
                     z1 = zformat
                     z2 = float(zformat) + 0.01
 
-                    outputname1 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
+                    outputname1 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                     default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z), 'depth_max': str(z),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname1, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                     print(outputname1)
                     _opts = load_options(default_values)
@@ -807,7 +807,7 @@ def download():
                         print ("####################")
 
 
-                    outputname2 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
+                    outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                     default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z1), 'depth_max': str(z2),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname2, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                     print(outputname2)
                     _opts = load_options(default_values)
@@ -835,7 +835,7 @@ def download():
             proxy_server = None
 
             #outputdir = str(Outdir)
-            outputname = str(fname)
+            #outputname = str(fname)
             motu_server = str(Mot)
             product_id = str(Pr)
             dataset_id = str(Ds)
@@ -863,7 +863,7 @@ def download():
                     z1 = zformat
                     z2 = float(zformat) + 0.01
 
-                    outputname1 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
+                    outputname1 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                     default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z), 'depth_max': str(z),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname1, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                     print(outputname1)
                     _opts = load_options(default_values)
@@ -876,7 +876,7 @@ def download():
                         print ("####################")
 
 
-                    outputname2 = "CMEMS_" + tmin[1:11] + "_"+ tmax[1:11]  +"_"+z+"-Depth"+ ".nc"
+                    outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                     default_values = {'date_min': str(tmin),'date_max': str(tmax),'depth_min': str(z1), 'depth_max': str(z2),'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname2, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
                     print(outputname2)
                     _opts = load_options(default_values)
