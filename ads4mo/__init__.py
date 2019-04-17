@@ -71,7 +71,7 @@ def download():
     
     Out = str(os.getcwd())
 
-    fname = "data.nc"
+    fname = "none.nc"
     
 
     
@@ -668,7 +668,7 @@ def download():
 
     if typology == "DEPTH":
 
-        stringxml = "python -m motuclient " + string + "--out-name " + name + ".nc"  + " --describe-product"
+        stringxml = "python -m motuclient " + string + " --out-dir " + Out + " --out-name " + name + ".nc"  + " --describe-product"
         print (stringxml)
         os.system(stringxml)
         tree = ET.parse( Out + "/" + name + ".xml")
