@@ -72,10 +72,18 @@ def download():
 
     string = input("Based on the selection criteria (showed in the documentation), please input the motuclient script: ")
 
+    hhstart = input("Please to insert the STARTING-TIME as HH:MM:SS. If nothing is insert the default value of 12:00:00 is going to be used: ")
+    if hhstart:
+        hhstart = "12:00:00"
+
+
+    hhend = input("Please to insert the ENDING-TIME as HH:MM:SS. If nothing is insert the default value of 12:00:00 is going to be used: ")
+    if hhend:
+        hhend = "12:00:00"
+
     Out = str(os.getcwd())
 
     fname = "none.nc"
-
 
 
     lista = string.split('--')[1:]
@@ -142,8 +150,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -168,8 +176,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -235,8 +243,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -261,8 +269,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -328,8 +336,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -354,8 +362,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -421,8 +429,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -447,8 +455,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -514,8 +522,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -540,8 +548,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -606,8 +614,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -632,8 +640,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -716,8 +724,8 @@ def download():
             t1= sd[1:11]
             t2= ed[1:11]
 
-            tmin = t1 + " 12:00:00"
-            tmax = t2 + " 12:00:00"
+            tmin = t1 +" " + hhstart
+            tmax = t2+" " + hhend
             
             for z in listadepth:
                 
@@ -782,8 +790,8 @@ def download():
             t1= sd[1:11]
             t2= ed[1:11]
 
-            tmin = t1 + " 12:00:00"
-            tmax = t2 + " 12:00:00"
+            tmin = t1 +" " + hhstart
+            tmax = t2+" " + hhend
             
             for z in listadepth: 
                 
@@ -848,8 +856,8 @@ def download():
             t1= sd[1:11]
             t2= ed[1:11]
 
-            tmin = t1 + " 12:00:00"
-            tmax = t2 + " 12:00:00"
+            tmin = t1 +" " + hhstart
+            tmax = t2+" " + hhend
             
             for z in listadepth: 
                 
@@ -926,8 +934,8 @@ def download():
             #print (t1)
             #print (t2)
                 
-            date_min = t1 +" 12:00:00"
-            date_max = t2 +" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             #print(date_min)
             #print (date_max)
@@ -953,10 +961,9 @@ def download():
             d2 = int(dde[0])
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
-
-                
-            hhstartdaily = "12:00:00" #to modify based on your needs
-            hhenddaily = "12:00:00"   #to modify based on your needs
+    
+            hhstartdaily = hhstart
+            hhenddaily = hhend
 
             start = dt.datetime(year1,month1,d1,0,0)
             end = dt.datetime(year2,month2,d2,0,0)
@@ -1028,8 +1035,8 @@ def download():
             #print (t1)
             #print (t2)
                 
-            date_min = t1 +" 12:00:00"
-            date_max = t2 +" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             #print(date_min)
             #print (date_max)
@@ -1057,8 +1064,8 @@ def download():
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
                 
-            hhstartdaily = "12:00:00" #to modify based on your needs
-            hhenddaily = "12:00:00"   #to modify based on your needs
+            hhstartdaily = hhstart
+            hhenddaily = hhend
 
             start = dt.datetime(year1,month1,d1,0,0)
             end = dt.datetime(year2,month2,d2,0,0)
@@ -1130,8 +1137,8 @@ def download():
             #print (t1)
             #print (t2)
                 
-            date_min = t1 +" 12:00:00"
-            date_max = t2 +" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             #print(date_min)
             #print (date_max)
@@ -1159,8 +1166,8 @@ def download():
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
                 
-            hhstartdaily = "12:00:00" #to modify based on your needs
-            hhenddaily = "12:00:00"   #to modify based on your needs
+            hhstartdaily = hhstart
+            hhenddaily = hhend
 
             start = dt.datetime(year1,month1,d1,0,0)
             end = dt.datetime(year2,month2,d2,0,0)
@@ -1231,8 +1238,8 @@ def download():
             #print (t1)
             #print (t2)
                 
-            date_min = t1 +" 12:00:00"
-            date_max = t2 +" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             #print(date_min)
             #print (date_max)
@@ -1260,8 +1267,8 @@ def download():
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
                 
-            hhstartdaily = "12:00:00" #to modify based on your needs
-            hhenddaily = "12:00:00"   #to modify based on your needs
+            hhstartdaily = hhstart
+            hhenddaily = hhend
 
             start = dt.datetime(year1,month1,d1,0,0)
             end = dt.datetime(year2,month2,d2,0,0)
@@ -1332,8 +1339,8 @@ def download():
             #print (t1)
             #print (t2)
                 
-            date_min = t1 +" 12:00:00"
-            date_max = t2 +" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             #print(date_min)
             #print (date_max)
@@ -1361,8 +1368,8 @@ def download():
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
                 
-            hhstartdaily = "12:00:00" #to modify based on your needs
-            hhenddaily = "12:00:00"   #to modify based on your needs
+            hhstartdaily = hhstart
+            hhenddaily = hhend
 
             start = dt.datetime(year1,month1,d1,0,0)
             end = dt.datetime(year2,month2,d2,0,0)
@@ -1433,8 +1440,8 @@ def download():
             #print (t1)
             #print (t2)
                 
-            date_min = t1 +" 12:00:00"
-            date_max = t2 +" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             #print(date_min)
             #print (date_max)
@@ -1462,8 +1469,8 @@ def download():
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
                 
-            hhstartdaily = "12:00:00" #to modify based on your needs
-            hhenddaily = "12:00:00"   #to modify based on your needs
+            hhstartdaily = hhstart
+            hhenddaily = hhend
 
             start = dt.datetime(year1,month1,d1,0,0)
             end = dt.datetime(year2,month2,d2,0,0)
@@ -1545,8 +1552,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -1571,8 +1578,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -1657,8 +1664,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -1683,8 +1690,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -1769,8 +1776,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -1795,8 +1802,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -1888,8 +1895,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -1914,8 +1921,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -1988,8 +1995,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -2014,8 +2021,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -2083,8 +2090,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -2109,8 +2116,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -2178,8 +2185,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -2204,8 +2211,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -2273,8 +2280,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -2299,8 +2306,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': '', 'depth_max': '','longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
@@ -2367,8 +2374,8 @@ def download():
             t1 = sd[1:11]
             t2 = ed[1:11]
             
-            date_min = t1 +" 12:00:00"
-            date_max = t2+" 12:00:00"
+            date_min = t1 +" " + hhstart
+            date_max = t2+" " + hhend
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -2393,8 +2400,8 @@ def download():
             #print(date_start)
             #print(date_end)
 
-            hhstart = " 12:00:00"
-            hhend = " 12:00:00"
+            #hhstart = " 12:00:00"
+            #hhend = " 12:00:00"
 
             default_values = {'date_min': str(date_min),'date_max': str(date_max),'depth_min': depth_min, 'depth_max': depth_max,'longitude_max': lon_max,'longitude_min': lon_min,'latitude_min': lat_min,'latitude_max': lat_max,'describe': None, 'auth_mode': 'cas', 'motu': motu_server,'block_size': 65536, 'log_level': 30, 'out_dir': Out,'socket_timeout': None,'sync': None,  'proxy_server': proxy_server,'proxy_user': proxy_user,'proxy_pwd': proxy_pass, 'user': cmems_user, 'pwd': cmems_pass,'variable': [v1,v2,v3],'product_id': dataset_id,'service_id': product_id,'user_agent': None,'out_name': outputname, 'outputWritten': 'netcdf','size' : '','console_mode': ''}
 
