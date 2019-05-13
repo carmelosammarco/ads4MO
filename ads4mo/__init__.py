@@ -72,13 +72,13 @@ def download():
 
     string = input("Based on the selection criteria (showed in the documentation), please input the motuclient script: ")
 
-    hhstart = input("Please to insert the STARTING-TIME as HH:MM:SS. If nothing is insert the default value of 12:00:00 is going to be used: ")
-    if hhstart:
+    hhstart = input("Please to insert the STARTING-TIME as HH:MM:SS. If nothing is inserted the default value of 12:00:00 is going to be used: ")
+    if hhstart == "":
         hhstart = "12:00:00"
 
 
-    hhend = input("Please to insert the ENDING-TIME as HH:MM:SS. If nothing is insert the default value of 12:00:00 is going to be used: ")
-    if hhend:
+    hhend = input("Please to insert the ENDING-TIME as HH:MM:SS. If nothing is inserted the default value of 12:00:00 is going to be used: ")
+    if hhend == "":
         hhend = "12:00:00"
 
     Out = str(os.getcwd())
