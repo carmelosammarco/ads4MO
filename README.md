@@ -1,10 +1,19 @@
-![Imgur](https://i.imgur.com/iEWAtkS.gif?1)
 
 # ads4mo - Added Download Services for Mercator-Ocean
 
 [![Build Status](https://travis-ci.com/carmelosammarco/ads4mo.png)](https://travis-ci.com/carmelosammarco/ads4mo) [![Build status](https://ci.appveyor.com/api/projects/status/y4glc7d7ccjb8diq?svg=true)](https://ci.appveyor.com/project/carmelosammarco/ads4mo) [![Gitter](https://badges.gitter.im/ads4mo/community.svg)](https://gitter.im/ads4mo/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) 
 
+I developed this software while working as [AKKA](https://www.akka-technologies.com) consultant engeneer for the [CMEMS's Service Desk (Copernicus Marine Environment Monitoring Service)](http://marine.copernicus.eu). I was and I am inspired by the Mercator-Ocean's community (users, co-workers, web-forum discussions and many more) which gave me ideas and the motivational power to build this tool. It is the first python application of its kind created inside the CMEMS environment and I hope that with time it will became an ufficial CMEMS tool. The main goals that I wanted to adress were solving the most common user problems as the data-download requests and the netCDF file manipulations.
 
+**This project gave me also ideas to develop other tools** as [tool4nc](https://github.com/carmelosammarco/tool4nc), [MerOCenv](https://github.com/carmelosammarco/MerOCenv) and [MerOC](https://github.com/carmelosammarco/MerOC). To know more about them just visit the projects web pages which are hyperlinked above.
+
+I created also a **chat-community** powered by "Gitter" where is possible have an exchange of ideas,functionalities,bugs and many more. Just click ![Gitter](https://badges.gitter.im/ads4mo/community.svg) to acces the chat room.
+
+Many thanks to visit this page and try this software.
+
+**Carmelo Sammarco**
+
+## Introduction:
 Python module containing added downloads services for download the netCDF files from the CMEMS's catalogue and especially usefull for big data requests. It is possible download data by MONTH, DEPTH or DAY until a maximum of three selected variables(Planning to increase this number thought).
 It brings in a very intuitive scripting way what was already proposed with [MerOC](https://github.com/carmelosammarco/MerOC).
 

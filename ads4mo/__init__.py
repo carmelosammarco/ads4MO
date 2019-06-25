@@ -1,3 +1,24 @@
+#####################################################################
+#Programm for Mercator Ocean by Carmelo Sammarco
+#####################################################################
+
+#<ads4mo - Interactive terminal session to download with advanced download services.>
+#Copyright (C) <2018>  <Carmelo Sammarco - sammarcocarmelo@gmail.com>
+
+#This program is free software: you can redistribute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+
+#You should have received a copy of the GNU General Public License
+#along with this program.  If not, see <https://www.gnu.org/licenses/>.
+###################################################################
+
 #Import the modules needed
 from xml.etree import cElementTree as ET
 import motuclient as mt
@@ -15,6 +36,10 @@ import math
 def download():
 
     # Main functions 
+    
+    print("<ads4mo>  Copyright (C) <2018>  <Carmelo Sammarco>")
+    print("This program comes with ABSOLUTELY NO WARRANTY")
+    print("This is free software, and you are welcome to redistribute it under the GPLv3 conditions.")
 
     def countX(lst, x):
         count = 0
