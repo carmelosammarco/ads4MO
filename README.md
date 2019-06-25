@@ -1,4 +1,3 @@
-![Imgur](https://i.imgur.com/iEWAtkS.gif?1)
 
 # ads4mo - Added Download Services for Mercator-Ocean
 
