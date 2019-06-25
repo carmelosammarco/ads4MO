@@ -1,4 +1,6 @@
-###################################################################
+#####################################################################
+#Programm for Mercator Ocean by Carmelo Sammarco
+#####################################################################
 #<ads4mo - Interactive terminal session to download with advanced download services.>
 #Copyright (C) <2018>  <Carmelo Sammarco - sammarcocarmelo@gmail.com>
 
