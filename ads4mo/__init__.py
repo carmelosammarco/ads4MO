@@ -81,10 +81,10 @@ def download():
 
     # MONTH, DEPTH, DAY, MONTH&DEPTH, YEAR
 
-    cmems_user = input("Please enter your user-name: ")
-    cmems_pass = input("Please enter your password: ")
+    cmems_user = input("Please enter your USERNAME: ")
+    cmems_pass = input("Please enter your PASSWORD: ")
 
-    typology = input("Please enter which type of download |MONTH|DEPTH|DAY|MONTH&DEPTH|YEAR|: ")
+    typology = input("Please enter which type of download | MONTH | DEPTH | DAY | MONTH&DEPTH | YEAR |: ")
 
     string = input("Based on the selection criteria (showed in the documentation), please input the motuclient script: ")
 
