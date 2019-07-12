@@ -665,7 +665,6 @@ def download():
 
     #################################################################################
 
-
     if typology == "DEPTH":
 
         if nV == 1:
@@ -833,21 +832,21 @@ def download():
                     print("---The depth correction is not required---")
                     print ("####################")
 
+                else:
+                    outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
 
-                outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
+                    print(outputname2)
 
-                print(outputname2)
+                    command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
+                    print(command_string)
+                        
+                    os.system(command_string)
 
-                print(command_string)
-                    
-                os.system(command_string)
+                    time.sleep(2)
+                    print ("---The min/max depth value is corrected---")
+                    print ("####################")
 
-                time.sleep(2)
-
-                print ("---The min/max depth value is corrected---")
-                print ("####################")
 
         elif nV == 3:
 
@@ -925,22 +924,20 @@ def download():
                     print("---The depth correction is not required---")
                     print ("####################")
 
-
-                outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
-                
-                print(outputname2)
-
-                command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
-
-                print(command_string)
+                else:
+                    outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                     
-                os.system(command_string)
+                    print(outputname2)
 
-                time.sleep(2)
+                    command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
+                    print(command_string)
+                        
+                    os.system(command_string)
 
-                print ("---The min/max depth value is corrected---")
-                print ("####################")
+                    time.sleep(2)
+                    print ("---The min/max depth value is corrected---")
+                    print ("####################")
 
         else:
             print("ERROR: Number of variables not supported. If you need more variables please to contact Carmelo Sammarco") 
@@ -1688,22 +1685,22 @@ def download():
                         print("---The depth correction is not required---")
                         print ("####################")
 
-                    outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
+                    else:
+                        outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
 
-                    print(outputname2)
+                        print(outputname2)
 
-                    command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
+                        command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                    print(command_string)
-                        
-                    os.system(command_string)
+                        print(command_string)
+                            
+                        os.system(command_string)
 
-                    time.sleep(2)
+                        time.sleep(2)
+                        print ("---The min/max depth value is corrected---")
+                        print ("####################")
 
-                    print ("---The min/max depth value is corrected---")
-                    print ("####################")
-
-                date_start = date_end_cmd + dt.timedelta(days=1)
+                    date_start = date_end_cmd + dt.timedelta(days=1)
         
         elif nV == 2:
 
@@ -1811,23 +1808,23 @@ def download():
                         print("---The depth correction is not required---")
                         print ("####################")
 
+                    else:
+                        outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
 
-                    outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
+                        print(outputname2)
 
-                    print(outputname2)
+                        command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                    command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
+                        print(command_string)
+                            
+                        os.system(command_string)
 
-                    print(command_string)
-                        
-                    os.system(command_string)
+                        time.sleep(2)
 
-                    time.sleep(2)
+                        print ("---The min/max depth value is corrected---")
+                        print ("####################")
 
-                    print ("---The min/max depth value is corrected---")
-                    print ("####################")
-
-                date_start = date_end_cmd + dt.timedelta(days=1)
+                    date_start = date_end_cmd + dt.timedelta(days=1)
 
         elif nV == 3:
 
@@ -1936,23 +1933,23 @@ def download():
                         print("---The depth correction is not required---")
                         print ("####################")
 
+                    else:
+                        outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
 
-                    outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
+                        print(outputname2)
 
-                    print(outputname2)
+                        command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                    command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
+                        print(command_string)
+                            
+                        os.system(command_string)
 
-                    print(command_string)
-                        
-                    os.system(command_string)
+                        time.sleep(2)
 
-                    time.sleep(2)
+                        print ("---The min/max depth value is corrected---")
+                        print ("####################")
 
-                    print ("---The min/max depth value is corrected---")
-                    print ("####################")
-
-                date_start = date_end_cmd + dt.timedelta(days=1)
+                    date_start = date_end_cmd + dt.timedelta(days=1)
         
         
         else:
