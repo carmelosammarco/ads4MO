@@ -18,7 +18,7 @@ Python module containing added downloads services for download the netCDF files 
 It brings in a very intuitive scripting way what was already proposed with [MerOC](https://github.com/carmelosammarco/MerOC).
 
 <p align="center">
-  <img width="600" height="380" src="DATA/GIF.gif">
+  <img width="600" height="380" src="DATA/...">
 </p>
 
 ## Be aware that:
