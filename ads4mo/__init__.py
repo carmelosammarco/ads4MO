@@ -29,6 +29,8 @@ import calendar
 import sys
 import math
 
+import getpass
+
 
 
 def download():
@@ -82,7 +84,10 @@ def download():
     # MONTH, DEPTH, DAY, MONTH&DEPTH, YEAR
 
     cmems_user = input("Please enter your USERNAME: ")
-    cmems_pass = input("Please enter your PASSWORD: ")
+    cmems_pass = getpass.getpass("Please enter your PASSWORD: ")
+
+    #cmems_user = input("Please enter your USERNAME: ")
+    #cmems_pass = input("Please enter your PASSWORD: ")
 
     typology = input("Please enter which type of download | MONTH | DEPTH | DAY | MONTH&DEPTH | YEAR |: ")
 
@@ -2299,7 +2304,7 @@ def download():
                 date_end_cmd = date_start + dt.timedelta(days=365)
                 #date_end_cmd = (dt.datetime(date_start.year, date_start.month,calendar.monthrange(date_start.year, date_start.month)[1]))
 
-                date_cmd =  date_start.strftime("%Y-%m-%d") + hhstart , date_end_cmd.strftime("%Y-%m-%d") + hhend 
+                date_cmd =  date_start.strftime("%Y-%m-%d") + " " + hhstart , date_end_cmd.strftime("%Y-%m-%d") + " " + hhend 
             
                 date_min = date_cmd[0]
                 date_max = date_cmd[1]
@@ -2480,7 +2485,7 @@ def download():
                 date_end_cmd = date_start + dt.timedelta(days=365)
                 #date_end_cmd = (dt.datetime(date_start.year, date_start.month,calendar.monthrange(date_start.year, date_start.month)[1]))
 
-                date_cmd =  date_start.strftime("%Y-%m-%d") + hhstart , date_end_cmd.strftime("%Y-%m-%d") + hhend 
+                date_cmd =  date_start.strftime("%Y-%m-%d") + " " + hhstart , date_end_cmd.strftime("%Y-%m-%d") + " " + hhend 
             
                 date_min = date_cmd[0]
                 date_max = date_cmd[1]
