@@ -85,10 +85,10 @@ The results are going to be downloaded in the file path in which the terminal/co
 
 ---------
 
-**The App For Windows can be downloaded from <a href="DATA/coming-soon.png" download>HERE</a>.**
+**The App For Windows can be downloaded from [HERE](https://www.dropbox.com/s/37plu2drlf6ep0s/ComingSoon.png?dl=0).**
 
 ---------
 
-**The App For MAC-OS can be downloaded from [HERE](DATA/coming-soon.png).**
+**The App For MAC-OS can be downloaded from [HERE](https://www.dropbox.com/s/37plu2drlf6ep0s/ComingSoon.png?dl=0).**
 
 ---------
