@@ -211,15 +211,13 @@ def download():
 
                 outputname = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] + ".nc"
 
-                print(" ")
                 print(outputname)
-                print("#####")
-
+                
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                #print(command_string)
-                    
+                #print(command_string)   
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
                 
@@ -302,15 +300,14 @@ def download():
                 
                 outputname = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] + ".nc"
 
-                print(" ")
                 print(outputname)
-                print("#####")
-
+                
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                #print(command_string)
-                    
+                #print(command_string)   
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
+
                 
                 time.sleep(2)
                 
@@ -392,15 +389,14 @@ def download():
                 date_max = date_cmd[1]
                 outputname = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] + ".nc"
             
-                print(" ")
                 print(outputname)
-                print("#####")
-
+               
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                #print(command_string)
-                    
+                #print(command_string)   
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
+
 
                 time.sleep(2)
                 
@@ -482,15 +478,13 @@ def download():
                 date_max = date_cmd[1]
                 outputname = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] + ".nc"
             
-                print(" ")
                 print(outputname)
-                print("#####")
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                #print(command_string)
-                    
+                #print(command_string)   
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
                 
@@ -574,15 +568,13 @@ def download():
                 date_max = date_cmd[1]
                 outputname = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] + ".nc"
             
-                print(" ")
                 print(outputname)
-                print("#####")
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                #print(command_string)
-                    
+                #print(command_string)   
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
                 
@@ -664,15 +656,13 @@ def download():
                 date_max = date_cmd[1]
                 outputname = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] + ".nc"
             
-                print(" ")
                 print(outputname)
-                print("#####")
-
+                
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                #print(command_string)
-                    
+                #print(command_string)   
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
                 
@@ -729,13 +719,14 @@ def download():
             tmax = t2+" " + hhend
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
-            print (stringxml)
+            #print (stringxml)
+            #subprocess.run(stringxml, stdout=subprocess.PIPE)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
             depth = root[2].text
             listadepth = depth.split(';')
-            print (listadepth)
+            #print (listadepth)
             
             for z in listadepth:
                 
@@ -749,9 +740,9 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z) + " --depth-max " + str(z) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname1)
 
-                print(command_string)
-                    
+                #print(command_string)    
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
 
@@ -764,13 +755,13 @@ def download():
                 else:
                     outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
 
-                    print(outputname2)
+                    #print(outputname2)
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                    print(command_string)
-                        
+                    #print(command_string)    
                     os.system(command_string)
+                    #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                     time.sleep(2)
 
@@ -820,13 +811,14 @@ def download():
             tmax = t2+" " + hhend
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
-            print (stringxml)
+            #print (stringxml)
+            #subprocess.run(stringxml, stdout=subprocess.PIPE)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
             depth = root[2].text
             listadepth = depth.split(';')
-            print (listadepth)
+            #print (listadepth)
             
             for z in listadepth: 
                 
@@ -840,9 +832,9 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z) + " --depth-max " + str(z) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname1)
 
-                print(command_string)
-                    
+                #print(command_string)   
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
 
@@ -855,15 +847,16 @@ def download():
                 else:
                     outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
 
-                    print(outputname2)
+                    #print(outputname2)
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                    print(command_string)
-                        
+                    #print(command_string)   
                     os.system(command_string)
+                    #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                     time.sleep(2)
+
                     print ("---The min/max depth value is corrected---")
                     print ("####################")
 
@@ -912,13 +905,14 @@ def download():
             tmax = t2+" " + hhend
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
-            print (stringxml)
+            #print (stringxml)
+            #subprocess.run(stringxml, stdout=subprocess.PIPE)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
             depth = root[2].text
             listadepth = depth.split(';')
-            print (listadepth)
+            #print (listadepth)
             
             for z in listadepth: 
                 
@@ -932,9 +926,9 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z) + " --depth-max " + str(z) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname1)
 
-                print(command_string)
-                    
+                #print(command_string)  
                 os.system(command_string)
+                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
 
@@ -947,13 +941,13 @@ def download():
                 else:
                     outputname2 = "CMEMS_" + tmin[0:10] + "_"+ tmax[0:10]  +"_"+z+"-Depth"+ ".nc"
                     
-                    print(outputname2)
+                    #print(outputname2)
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                    print(command_string)
-                        
+                    #print(command_string) 
                     os.system(command_string)
+                    #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                     time.sleep(2)
                     print ("---The min/max depth value is corrected---")
@@ -1061,7 +1055,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1164,7 +1158,7 @@ def download():
 
                         command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                        print(command_string)
+                        #print(command_string)
                             
                         os.system(command_string)
 
@@ -1268,7 +1262,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1371,7 +1365,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1475,7 +1469,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1)  + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1578,7 +1572,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1)  + " --variable " + str(variable2)  + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1642,13 +1636,13 @@ def download():
             date_max = t2+" " + hhend
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
-            print (stringxml)
+            #print (stringxml)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
             depth = root[2].text
             listadepth = depth.split(';')
-            print (listadepth)
+            #print (listadepth)
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -1693,7 +1687,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(z) + " --depth-max " + str(z) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname1)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1708,15 +1702,16 @@ def download():
                     else:
                         outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
 
-                        print(outputname2)
+                        #print(outputname2)
 
                         command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                        print(command_string)
+                        #print(command_string)
                             
                         os.system(command_string)
 
                         time.sleep(2)
+
                         print ("---The min/max depth value is corrected---")
                         print ("####################")
 
@@ -1765,13 +1760,13 @@ def download():
             date_max = t2+" " + hhend
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
-            print (stringxml)
+            #print (stringxml)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
             depth = root[2].text
             listadepth = depth.split(';')
-            print (listadepth)
+            #print (listadepth)
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -1816,7 +1811,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(z) + " --depth-max " + str(z) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname1)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1831,11 +1826,11 @@ def download():
                     else:
                         outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
 
-                        print(outputname2)
+                        #print(outputname2)
 
                         command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                        print(command_string)
+                        #print(command_string)
                             
                         os.system(command_string)
 
@@ -1890,13 +1885,13 @@ def download():
             date_max = t2+" " + hhend
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
-            print (stringxml)
+            #print (stringxml)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
             depth = root[2].text
             listadepth = depth.split(';')
-            print (listadepth)
+            #print (listadepth)
 
             styyyymmdd = []
             endyyyymmdd = []
@@ -1941,7 +1936,7 @@ def download():
 
                     command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(z) + " --depth-max " + str(z) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname1)
 
-                    print(command_string)
+                    #print(command_string)
                         
                     os.system(command_string)
 
@@ -1956,11 +1951,11 @@ def download():
                     else:
                         outputname2 = "CMEMS_" + date_min[0:10] + "_"+ date_max[0:10] +"_"+z+"-Depth"+ ".nc"
 
-                        print(outputname2)
+                        #print(outputname2)
 
                         command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(z1) + " --depth-max " + str(z2) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname2)
 
-                        print(command_string)
+                        #print(command_string)
                             
                         os.system(command_string)
 
@@ -2058,7 +2053,7 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                print(command_string)
+                #print(command_string)
                     
                 os.system(command_string)
 
@@ -2149,7 +2144,7 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                print(command_string)
+                #print(command_string)
                     
                 os.system(command_string)
 
@@ -2239,7 +2234,7 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                print(command_string)
+                #print(command_string)
                     
                 os.system(command_string)
 
@@ -2329,7 +2324,7 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                print(command_string)
+                #print(command_string)
                     
                 os.system(command_string)
 
@@ -2420,7 +2415,7 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) +" --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                print(command_string)
+                #print(command_string)
                     
                 os.system(command_string)
 
@@ -2510,7 +2505,7 @@ def download():
 
                 command_string = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(date_min) +  " --date-max " + str(date_max) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + str(outputname)
 
-                print(command_string)
+                #print(command_string)
                     
                 os.system(command_string)
 
