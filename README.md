@@ -85,10 +85,10 @@ The results are going to be downloaded in the file path in which the terminal/co
 
 ---------
 
-**The App For Windows can be downloaded from <a href="myFile.js" download>HERE</a>.**
+**The App For Windows can be downloaded from <a href="DATA/coming-soon.png" download>HERE</a>.**
 
 ---------
 
-**The App For MAC-OS can be downloaded from <a href="myFile.js" download>HERE</a>.**
+**The App For MAC-OS can be downloaded from <a href="DATA/coming-soon.png" download>HERE</a>.**
 
 ---------
