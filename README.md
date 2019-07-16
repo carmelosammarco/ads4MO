@@ -81,7 +81,7 @@ What you need to use as module's input:
 
 The results are going to be downloaded in the file path in which the terminal/command-prompt was at the moment of the data request.
 
-## Stand-alone applications:
+## Stand-alone application:
 
 ---------
 
@@ -89,6 +89,6 @@ The results are going to be downloaded in the file path in which the terminal/co
 
 ---------
 
-**The App For MAC-OS can be downloaded from [HERE](https://www.dropbox.com/s/37plu2drlf6ep0s/ComingSoon.png?dl=0).**
+**The App For macOS can be downloaded from [HERE](https://www.dropbox.com/s/t0fzucl9ntwsrln/ads4mo-macOS?dl=0).**
 
 ---------
