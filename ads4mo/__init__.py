@@ -217,7 +217,7 @@ def download():
 
                 #print(command_string)   
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
+                
 
                 time.sleep(2)
                 
@@ -306,7 +306,7 @@ def download():
 
                 #print(command_string)   
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
+                
 
                 
                 time.sleep(2)
@@ -395,8 +395,7 @@ def download():
 
                 #print(command_string)   
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
-
+                
 
                 time.sleep(2)
                 
@@ -484,7 +483,7 @@ def download():
 
                 #print(command_string)   
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
+                
 
                 time.sleep(2)
                 
@@ -574,7 +573,7 @@ def download():
 
                 #print(command_string)   
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
+                
 
                 time.sleep(2)
                 
@@ -662,7 +661,7 @@ def download():
 
                 #print(command_string)   
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
+                
 
                 time.sleep(2)
                 
@@ -720,7 +719,6 @@ def download():
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
             #print (stringxml)
-            #subprocess.run(stringxml, stdout=subprocess.PIPE)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
@@ -742,7 +740,6 @@ def download():
 
                 #print(command_string)    
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
 
@@ -761,7 +758,6 @@ def download():
 
                     #print(command_string)    
                     os.system(command_string)
-                    #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                     time.sleep(2)
 
@@ -812,7 +808,6 @@ def download():
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
             #print (stringxml)
-            #subprocess.run(stringxml, stdout=subprocess.PIPE)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
@@ -834,7 +829,6 @@ def download():
 
                 #print(command_string)   
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
 
@@ -853,7 +847,6 @@ def download():
 
                     #print(command_string)   
                     os.system(command_string)
-                    #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                     time.sleep(2)
 
@@ -906,7 +899,6 @@ def download():
 
             stringxml = "python -m motuclient --user " + str(cmems_user) + " --pwd " + str(cmems_pass) + " --motu " + str(motu_server) + " --service-id " + str(product_id) + " --product-id " + str(dataset_id)  + " --longitude-min " + str(lon_min) + " --longitude-max " + str(lon_max) + " --latitude-min " + str(lat_min) + " --latitude-max "  + str(lat_max) + " --date-min " + str(tmin) +  " --date-max " + str(tmax) + " --depth-min " + str(depth_min) + " --depth-max " + str(depth_max) + " --variable " + str(variable1) + " --variable " + str(variable2) + " --variable " + str(variable3) + " --out-dir " + str(Out) + " --out-name " + "name.nc"  + " --describe-product"
             #print (stringxml)
-            #subprocess.run(stringxml, stdout=subprocess.PIPE)
             os.system(stringxml)
             tree = ET.parse( Out + "/" + "name.xml" )
             root = tree.getroot()
@@ -928,7 +920,6 @@ def download():
 
                 #print(command_string)  
                 os.system(command_string)
-                #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                 time.sleep(2)
 
@@ -947,7 +938,6 @@ def download():
 
                     #print(command_string) 
                     os.system(command_string)
-                    #subprocess.run(command_string, stdout=subprocess.PIPE)
 
                     time.sleep(2)
                     print ("---The min/max depth value is corrected---")
