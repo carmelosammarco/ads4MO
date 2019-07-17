@@ -91,4 +91,6 @@ The results are going to be downloaded in the file path in which the terminal/co
 
 **The App For macOS can be downloaded from [HERE](https://www.dropbox.com/s/aly9ialw5zc6k0d/ads4mo-macOS.zip?dl=0).**
 
+If the APP doesn't start be sure to give to the system the permission to run it. In particular please to go in **Security & Privacy** (Tab "General") and then click on the buttun which will allow the APP to be executed.
+
 ---------
