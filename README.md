@@ -81,11 +81,11 @@ What you need to use as module's input:
 
 The results are going to be downloaded in the file path in which the terminal/command-prompt was at the moment of the data request.
 
-## Stand-alone application:
+## Stand-alone applications:
 
 ---------
 
-**The App For Windows can be downloaded from [HERE](https://www.dropbox.com/s/37plu2drlf6ep0s/ComingSoon.png?dl=0).**
+**The App For Windows can be downloaded from [HERE](https://www.dropbox.com/s/e5ilv9x84m4m0gk/ads4mo-win.exe?dl=0).**
 
 ---------
 
