@@ -89,6 +89,6 @@ The results are going to be downloaded in the file path in which the terminal/co
 
 ---------
 
-**The App For macOS can be downloaded from [HERE](https://www.dropbox.com/s/t0fzucl9ntwsrln/ads4mo-macOS?dl=0).**
+**The App For macOS can be downloaded from [HERE](https://www.dropbox.com/s/aly9ialw5zc6k0d/ads4mo-macOS.zip?dl=0).**
 
 ---------
