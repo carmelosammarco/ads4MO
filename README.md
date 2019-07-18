@@ -81,16 +81,18 @@ What you need to use as module's input:
 
 The results are going to be downloaded in the file path in which the terminal/command-prompt was at the moment of the data request.
 
-## Stand-alone applications:
+## Stand-alone applications (No Python installation required):
 
 ---------
 
-**The App For Windows can be downloaded from [HERE](https://www.dropbox.com/s/e5ilv9x84m4m0gk/ads4mo-win.exe?dl=0).**
+**The stand-alone App For Windows OS can be downloaded from [HERE](https://www.dropbox.com/s/e5ilv9x84m4m0gk/ads4mo-win.exe?dl=0).**
+
+The APP was developed, compiled and tested in Windows 10 environment. As soon as I have time I will try to test it in other environments.
 
 ---------
 
 **The App For macOS can be downloaded from [HERE](https://www.dropbox.com/s/vimrdqhcri5tevm/ads4mo-macOS.zip?dl=0).**
 
-If the APP doesn't start be sure to give to the system the permission to run it. In particular please to go in **Security & Privacy** (Tab "General") and then click on the buttun which will allow the APP to be executed.
+If the APP doesn't start because of 'unidentified developer' then you need to give the system the permission to run it. In particular please to go in **Security & Privacy** (Tab "General") and then click on the buttun which will allow the APP to be executed.
 
 ---------
