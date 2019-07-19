@@ -87,7 +87,7 @@ The results are going to be downloaded in the file path in which the terminal/co
 
 **The stand-alone App for Windows OS can be downloaded from [HERE](https://www.dropbox.com/s/e5ilv9x84m4m0gk/ads4mo-win.exe?dl=0).**
 
-The APP was developed, compiled and tested in Windows 10 environment. As soon as I have time I will try to test it in other Windows environments. It will generate a folder called "CMEMS_DATA" in which all the data downloaded are going to be stored. THis folder will be stored in the same system path where the executable "ads4mo-win.exe" is located.
+The APP was developed, compiled and tested in Windows 10 environment. As soon as I have time I will try to test it in other Windows environments. It will generate a folder called "CMEMS_DATA" in which all the data downloaded are going to be stored. This folder will be stored in the same system path where the executable "ads4mo-win.exe" is located.
 
 ---------
 
