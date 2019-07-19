@@ -93,6 +93,6 @@ The APP was developed, compiled and tested in Windows 10 environment. As soon as
 
 **The stand-alone App for macOS can be downloaded from [HERE](https://www.dropbox.com/s/vimrdqhcri5tevm/ads4mo-macOS.zip?dl=0).**
 
-If the APP doesn't start because of 'unidentified developer' then you need to give the system the permission to run it. In particular please to go in **Security & Privacy** (Tab "General") and then click on the buttun which will allow the APP to be executed. It will create a folder in the Desktop called "CMEMS_DATA" in which all the data downloaded are going to be stored. 
+If the APP doesn't start because of "unidentified developer" message then you need to give the system the permission to run it. In more details, please to go in **Security & Privacy** (Tab "General") and then click on the button which will allows the execution of the tool. It will create a Desktop folder called "CMEMS_DATA" which will store all the data downloaded.
 
 ---------
