@@ -14,7 +14,7 @@ before_install:
 # Install packages
 install:
   - python -m pip install --upgrade pip setuptools wheel 
-  - pip install ads4mo
+  - pip install ads4MO
 
 # Run test
 script:

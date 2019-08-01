@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
-setup(name='ads4mo',
-      version='0.1.9',
+setup(name='ads4MO',
+      version='0.0.1',
       description='Python module which adds new CMEMS downloads services (applied mainly to big data requests)',
       long_description=long_description,
       long_description_content_type='text/markdown',
