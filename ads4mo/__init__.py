@@ -1,5 +1,5 @@
 #####################################################################
-#Programm for Mercator Ocean by Carmelo Sammarco
+#Programm author: Carmelo Sammarco
 #####################################################################
 
 #< ads4mo - Interactive terminal session to download with advanced download services >
