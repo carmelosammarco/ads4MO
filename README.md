@@ -5,7 +5,7 @@
 
 **I developed this software because motivated to improve my efficiency and productivity. It is just an attemp/idea/prototype and it is not fully optimased or considered stable.**
 
-**This project gave me also ideas to develop other tools** as [tool4NC](https://github.com/carmelosammarco/tool4NC), [MerocENV](https://github.com/carmelosammarco/MerocENV) and [MerOC](https://github.com/carmelosammarco/MerOC). To know more about them just visit the projects web pages which are hyperlinked above.
+**This project gave me also ideas to develop other tools** as [tool4NC](https://github.com/carmelosammarco/tool4NC), [JupLab4NetCDF](https://github.com/carmelosammarco/JupLab4NetCDF) and [MerOC](https://github.com/carmelosammarco/MerOC). To know more about them just visit the projects web pages which are hyperlinked above.
 
 I created also a **chat-community** powered by "Gitter" where is possible have an exchange of ideas,functionalities,bugs and many more. Just click ![Gitter](https://badges.gitter.im/ads4mo/community.svg) to acces the chat room.
 
@@ -14,7 +14,7 @@ Many thanks to visit this page and try this software.
 **Carmelo Sammarco**
 
 ## Introduction:
-Python module containing added downloads services for download the netCDF files from the CMEMS's catalogue and especially usefull for big data requests. It is possible download data by MONTH, DEPTH or DAY until a maximum of three selected variables(Planning to increase this number thought).
+It is possible download data by MONTH, DEPTH or DAY until a maximum of three selected variables(Planning to increase this number thought).
 It brings in a very intuitive scripting way what was already proposed with [MerOC](https://github.com/carmelosammarco/MerOC).
 
 <p align="center">
@@ -70,7 +70,7 @@ Please to copy and paste just from the "--motu" until the end. You can leave unt
 Following an example of the full script generted by the Web-portal:
 
 ```
-python -m motuclient  --motu http://nrt.cmems-du.eu/motu-web/Motu --service-id GLOBAL_ANALYSIS_FORECAST_PHY_001_024-TDS --product-id global-analysis-forecast-phy-001-024 --longitude-min -180 --longitude-max 179.9166717529297 --latitude-min -80 --latitude-max 90 --date-min "2019-04-19 12:00:00" --date-max "2019-04-19 12:00:00" --depth-min 0.493 --depth-max 0.4942 --variable thetao --variable bottomT  --out-dir <OUTPUT_DIR> --out-name <OUTPUT_FILENAME> --user <USERNAME> --pwd <PASSWORD>
+python -m motuclient  --motu http://..... --service-id GLOBAL_ANALYSIS_FORECAST_PHY_001_024-TDS --product-id global-analysis-forecast-phy-001-024 --longitude-min -180 --longitude-max 179.9166717529297 --latitude-min -80 --latitude-max 90 --date-min "2019-04-19 12:00:00" --date-max "2019-04-19 12:00:00" --depth-min 0.493 --depth-max 0.4942 --variable thetao --variable bottomT  --out-dir <OUTPUT_DIR> --out-name <OUTPUT_FILENAME> --user <USERNAME> --pwd <PASSWORD>
 ```
 
 What you need to use as module's input:
