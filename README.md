@@ -9,7 +9,7 @@
 
 I created also a **chat-community** powered by "Gitter" where is possible have an exchange of ideas,functionalities,bugs and many more. Just click ![Gitter](https://badges.gitter.im/ads4mo/community.svg) to acces the chat room.
 
-Many thanks to visit this page and try this software.
+Many thanks to visit this page and try this python software.
 
 **Carmelo Sammarco**
 
