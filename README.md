@@ -7,7 +7,6 @@
 
 **This project gave me also ideas to develop other tools** as [tool4NC](https://github.com/carmelosammarco/tool4NC), [JupLab4NetCDF](https://github.com/carmelosammarco/JupLab4NetCDF) and [MerOC](https://github.com/carmelosammarco/MerOC). To know more about them just visit the projects web pages which are hyperlinked above.
 
-I created also a **chat-community** powered by "Gitter" where is possible have an exchange of ideas,functionalities,bugs and many more. Just click ![Gitter](https://badges.gitter.im/ads4mo/community.svg) to acces the chat room.
 
 Many thanks to visit this page and try this software.
 
